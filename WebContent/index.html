@@ -2,11 +2,41 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>Main 확인</title>
 	</head>
 	<body>
-		<a href ="http://localhost:8080/201905/Main"> Main </a> 
+		<a href ="http://localhost:8080/201905/Main"> Main </a> <br> 
 		a 태그는 get방식이다.
+		
+		<hr>
+		<form action ="http://localhost:8080/201905/Main2"  >
+		method ="" 안쓸경우 기본값이 get방식으로 보내진다.<br>
+			<input type ="number" name="a" placeholder = "a 변수값"> <br>
+			<input type ="number" name="b" placeholder = "b 변수값"> <br>
+			<input type ="textr" name="c" placeholder = "c 변수값"> <br>
+		     uri 띄어쓰기를 인코딩 방식으로 변경시킴 
+			<input type="submit" value ="Get전송">
+		</form>
+		
+		<form action ="http://localhost:8080/201905/Main2" method ="post" >
+			<input type ="number" name="a" placeholder = "a 변수값"> <br>
+			<input type ="number" name="b" placeholder = "b 변수값"> <br>
+			<input type ="text" name="c" placeholder = "c 변수값"> <br>
+			<input type="submit" value ="Post전송">
+		</form>
+		
+		<form action ="http://localhost:8080/201905/Main3" >
+			<input type ="text" name="name" placeholder = "이름"> <br>
+			<input type ="number" name="age" placeholder = "나이"> <br>
+			<input type="submit" value ="고객전송">
+		</form>
+		
+		<form action ="http://localhost:8080/201905/Main3" >
+		<input type ="number" name = "a" placeholder=" 첫 번째 숫자를 입력하세요"><br>
+		<input type ="number" name = "b" placeholder =" 두 번째 숫자를 입력하세요"><br>
+		<input type ="text" name ="method" placeholder ="계산방법을 입력하세요"><br>
+		<input type ="submit" value ="실행">
+		</form>
 		
 	</body>
 </html>

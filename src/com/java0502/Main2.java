@@ -23,7 +23,7 @@ public class Main2 extends HttpServlet {
 		String b = request.getParameter("b"); //b 변수 : b  = 2 ;
 		String cc = request.getParameter("c"); //c 변수 : c  = 2 ;
 		
-		System.out.print(cc);
+		System.out.println(cc);
 		
 		String c = a+b;
 		System.out.println(c); //142
@@ -36,7 +36,7 @@ public class Main2 extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		doGet(request, response);
 	}
 
 }
