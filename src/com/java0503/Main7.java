@@ -17,7 +17,7 @@ public class Main7 extends HttpServlet {
 	
 	List<사용자>  사용자목록= new ArrayList<사용자>();
 	
-	//     ?   사용가능하나  Object 형식으로 바뀜
+	//     ?   사용가능하나  Object 형식으로 바뀌지만 object는 아니다.
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset = utf-8");
