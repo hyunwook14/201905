@@ -25,10 +25,11 @@ int age =0; int height =0; int weight =0; boolean flag =false;
 	
 	int count =0;
 	
-	/* Enumeration<String> params = request.getParameterNames();
+	 Enumeration<String> params = request.getParameterNames();
 	while(params.hasMoreElements()){
+		params.nextElement();
 		count++;
-	} */
+	} 
 	
 	if(count ==4){
 	String 이름 = request.getParameter("name");
