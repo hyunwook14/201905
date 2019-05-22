@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Main11 implements Main11Interface {
 	
-	 static List<Student> save = new ArrayList<Student>();
 	
 	
 	@Override
 	public boolean 학생추가(Student stu) {
 		// TODO Auto-generated method stub
-		save.add(stu);
+		
+		Util.save.add(stu);
 		System.out.println("추가완료");
 		return true;
 	}
@@ -20,9 +20,9 @@ public class Main11 implements Main11Interface {
 	public Student 학생검색(String name) {
 		// TODO Auto-generated method stub
 		Student st = null;	
-		for(int i =0; i<save.size(); i++) {
-		if(name.equals(save.get(i).getName())) {
-			st = save.get(i);
+		for(int i =0; i<Util.save.size(); i++) {
+		if(name.equals(Util.save.get(i).getName())) {
+			st = Util.save.get(i);
 		}
 		}
 		
