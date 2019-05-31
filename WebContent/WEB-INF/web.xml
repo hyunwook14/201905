@@ -4,4 +4,13 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Main8</servlet-name>
+  	<servlet-class>com.java0507.Main8</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Main8</servlet-name>
+  	<url-pattern>/Main8</url-pattern>
+  </servlet-mapping>
 </web-app>
